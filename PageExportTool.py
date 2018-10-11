@@ -8,7 +8,7 @@ base_url = "https://api.sandbox.ecrimex.net"
 phish_endpoint = "/phish"
 
 headers = {
-    'Authorization': "d0e965a6612d915f6b2e4cefd2f2d8dc432f6909",
+    'Authorization': "",
     'Content-Type': "application/json"
     }
 
