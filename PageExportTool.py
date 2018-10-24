@@ -8,7 +8,7 @@ base_url = "https://api.sandbox.ecrimex.net"
 phish_endpoint = "/phish"
 
 headers = {
-    'Authorization': "",
+    'Authorization': "Your key here",
     'Content-Type': "application/json"
     }
 
@@ -40,11 +40,11 @@ while 'next' in links:
 
 with open('Output_Phish_Data.csv', 'w',newline='') as new_csv_file:
     fieldnames = ['_links','id','url','brand','confidence_level','date_discovered','modified','asn','ip','domain','metadata','status']
-    csv_writer = csv.DictWriter(new_csv_file, fieldnames=fieldnames, delimiter= ',')
+    csv_writer = csv.DictWriter(new_csv_file, fieldnames=fieldnames, delimiter= '')
     csv_writer.writeheader()
 
-    for line in output_data:
-        csv_writer.writerow(line)
+    for row in output_data:
+        csv_writer.writerow(row)
 
 
 
